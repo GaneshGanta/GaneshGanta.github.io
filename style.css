@@ -1,0 +1,219 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+
+    position: relative;
+    width: 100%;
+    background: #eff4fd;
+
+}
+
+nav{
+
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+ 
+
+}
+
+
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+
+}nav .image{
+
+    width: 15%;
+    border-radius: 50%;
+}
+nav ul li a{
+
+
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.home{
+
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    gap: 8%;
+    grid-template-areas:  
+    "a b"; 
+    
+    
+    
+}
+
+.home .detel{
+
+  
+    margin-left: 8%;
+    margin-top: 13%;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.detel h1{
+
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+
+}
+
+span{
+
+    color: orange;
+}
+.detel p{
+
+    color: #555;
+    line-height: 22px;
+    font-weight: bold;
+
+}
+.detel a{
+
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px;
+    border: 5px;
+    border-radius: 6px;
+
+}
+
+.home .images{
+
+    align-items: center;
+    grid-area: b; 
+}
+.home .images > img{
+    width: 40%;
+    margin: auto;
+    display: block;
+    padding: 10%;
+   
+   
+    
+}
+@media  (min-width:480px) and (max-width:720px) {
+
+    nav{
+
+        width: 95%;
+        padding: 5px 0px;
+        justify-content: space-evenly
+        
+    }
+
+    .home{
+
+        grid-template-columns: 100%;
+        grid-template-areas:  
+        "b"
+        "a";
+        
+    }
+    .home .detel{
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .detel h1{
+
+        font-size: 35px;
+       
+    }
+
+    nav ul li a{
+
+       
+        font-weight: bold;
+        font-size: x-small;
+    }
+
+    
+}
+
+@media  (max-width:480px)  {
+
+    nav{
+
+        display: block;
+        width: 84%;
+        align-items: center;
+       
+    
+    }
+    nav ul{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li{
+
+        display: block;
+       
+        
+    
+    }nav .image{
+    
+        width: 50%;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
+
+    nav ul li a{
+
+        font-weight: bold;
+        font-size: 25px;
+
+
+    }
+    .home{
+
+        grid-template-columns: 100%;
+        grid-template-areas:  
+        "b"
+        "a";
+        
+    }
+    .home .detel{
+
+        width: 70%;
+        margin: auto;
+
+    }
+
+    .detel h1{
+
+        font-size: 30px;
+       
+    }
+
+}
