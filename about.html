@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        .tab-titles{
+
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            
+        }
+        .tab-links{
+
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        .tab-links::after{
+
+            content:'';
+            width: 0;
+            height: 3px;
+            left: 0;
+            position: absolute;
+            bottom: -8px;
+            transition: 0.5s;
+            
+
+        }
+        .tab-links .active-links::after{ 
+
+            width: 50%;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <div id="about">
+
+        <h2 style="color:  rgb(233, 116, 116);">About Me</h2>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci iste laborum sed eligendi. Pariatur nostrum dolor, laborum accusamus consequatur maxime, omnis nam fugiat minima perspiciatis aperiam. Neque facere hic sunt?</p>
+
+        <div class="tab-titles">
+
+            <div class="tab-links active-links"> 
+                
+                Proffessional Skills
+                
+            </div>
+
+            <div class="tab-links active-links">
+                
+                    Education
+                
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>

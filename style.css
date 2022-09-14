@@ -10,15 +10,18 @@
 
     position: relative;
     width: 100%;
+    background-color: rgb(20, 10, 10);
 
 }
 
 nav{
 
-    display: flex;
+   
     width: 84%;
+    display: flex;
+    background-color: #fff;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 0px;
     align-items: center;
     justify-content: space-between;
  
@@ -53,7 +56,8 @@ nav ul li a:hover{
 }
 
 
-.home{
+.hero .home{
+
 
     box-sizing: border-box;
     display: grid;
@@ -117,8 +121,9 @@ span{
     align-items: center;
     grid-area: b; 
     border-radius: 7%;
-    background-color: bisque;
-    display: flex;
+    background-color: bisque; 
+    display: flex; 
+
 
 }
 .home .images > img{
@@ -127,6 +132,7 @@ span{
     width: 40%;
     margin: auto;
     display: block;
+    
     
    
     
@@ -156,9 +162,10 @@ span{
    
    box-sizing: border-box;
    margin: 10px 0; 
-   border: 1px solid burlywood;
+   border: 2px solid burlywood;
    border-radius: 10px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: white;
     
 }
 .box > div{
@@ -170,6 +177,7 @@ span{
 .tool{
 
     font-size :45px;
+    color: #fff;
 
 }#skill{
 
@@ -181,6 +189,99 @@ span{
 
     padding: 5%;
 }
+
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+   
+
+}
+.row{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+
+    flex-basis: 35%;
+
+}
+.about-col-2{
+    flex-basis: 60%; 
+}
+ .about-col-1 img {
+
+    width: 65%;
+    border-radius: 15px; 
+    margin: auto;
+    display: block; 
+
+}.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(228, 140, 58);
+}
+
+.tab-titles{
+
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+
+
+}
+
+.tab-links::after{
+
+    content: '';
+    width: 0; 
+    height: 3px;
+    background: #ff004f; 
+    left: 0;
+    position: absolute;
+    bottom: -8px;
+    transition: 0.5s;
+
+
+}
+
+.tab-links.active-link::after { 
+
+    width: 50%; 
+
+}
+.tab-contents ul li { 
+
+ 
+   margin: 10px 2px;
+
+
+}
+.tab-contents ul li span {
+
+   color: #ad5973;
+
+
+}.tab-contents{
+   display: none;
+}.tab-contents.active-tab{
+
+   display: block;
+}
+
+  
+    
 
 
 @media  (min-width:720px) and (max-width:900px) { 
@@ -215,10 +316,32 @@ span{
 
     }
 
+    .container{
+
+        
+        display: grid;
+        width: 80%; 
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px; 
+       
+       
+    
+    }
+    .container .box > img{
+
+
+        width: 50%;
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    
+    }
+
+   
     
 }
-
-
 
 @media  (min-width:480px) and (max-width:720px) { 
 
@@ -265,8 +388,7 @@ span{
         display: grid;
         width: 80%;
         grid-template-columns: repeat(2,1fr);
-         gap: 30px;
-        margin: auto;
+        gap: 30px;
        
 
     }
@@ -277,6 +399,24 @@ span{
 
     }
 
+
+    .row{
+
+        display: block;
+        
+    }
+
+    .about-col-2{
+
+        padding: 10%; 
+
+
+    }
+    .about-col-1 img{
+
+            width: 50%;
+
+    }
 
     
 }
@@ -358,5 +498,42 @@ span{
         margin-top: 50px;
     }
 
+    .row{
+
+        display: block;
+        
+    }
+
+    .about-col-2{
+
+        padding: 10%; 
+
+
+    }
+    .tab-titles{
+
+            display: block;
+           
+
+    }
+    .tab-titles .tab-links{
+
+        margin-top :20px ;
+
+    }
+
+    .about-col-1 img{
+
+            width: 45%;
+          
+    }
+        
+    
+                        
+
 
 }
+
+
+
+
