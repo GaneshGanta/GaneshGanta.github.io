@@ -10,7 +10,6 @@
 
     position: relative;
     width: 100%;
-    background: #eff4fd;
 
 }
 
@@ -35,7 +34,7 @@ nav ul li{
 
 }nav .image{
 
-    width: 15%;
+    width: 13%;
     border-radius: 50%;
 }
 nav ul li a{
@@ -46,28 +45,39 @@ nav ul li a{
     font-weight: bold;
     font-size: 23px;
 }
+nav ul li a:hover{
+
+    color: rgb(209, 127, 27);
+
+
+}
+
 
 .home{
 
+    box-sizing: border-box;
     display: grid;
+    width: 84%;
     grid-template-columns: repeat(2,45%);
-    gap: 8%;
+    margin: auto;
+    gap: 4%; 
     grid-template-areas:  
     "a b"; 
-    
-    
     
 }
 
 .home .detel{
 
-  
-    margin-left: 8%;
-    margin-top: 13%;
+    background-color: bisque;
     grid-area: a;
     display: flex;
     flex-direction: column;
+    padding: 15%;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+
 
 }
 .detel h1{
@@ -86,7 +96,7 @@ span{
 
     color: #555;
     line-height: 22px;
-    font-weight: bold;
+    font-weight: bolder;
 
 }
 .detel a{
@@ -106,17 +116,114 @@ span{
 
     align-items: center;
     grid-area: b; 
+    border-radius: 7%;
+    background-color: bisque;
+    display: flex;
+
 }
 .home .images > img{
+
+
     width: 40%;
     margin: auto;
     display: block;
-    padding: 10%;
-   
+    
    
     
 }
-@media  (min-width:480px) and (max-width:720px) {
+
+.container{
+
+    display: grid;
+    width: 94%;
+    
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.container .box > img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}.container .box {
+   
+    box-sizing: border-box;
+   margin: 10px 0; 
+   border: 1px solid burlywood;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.box > div{
+
+  
+    margin-top: 3px;
+    padding-left: none;
+}
+.tool{
+
+    font-size :45px;
+
+}#skill{
+
+
+    padding: 2%;
+    margin-top: 50px;
+}
+.box .text{
+
+    padding: 5%;
+}
+
+
+@media  (min-width:720px) and (max-width:900px) { 
+
+
+    nav ul li a{
+
+       
+        font-size: 18px;
+
+    }
+    nav{
+
+        width: 95%;
+        padding: 5px 0px;
+        justify-content: space-evenly
+        
+    }
+    
+
+    .detel h1{
+
+        font-size: 40px;
+       
+    }
+
+    nav ul li a{
+
+       
+        font-weight: bold;
+        font-size: small;
+
+    }
+
+    
+}
+
+
+
+
+
+
+@media  (min-width:480px) and (max-width:720px) { 
 
     nav{
 
@@ -128,7 +235,8 @@ span{
 
     .home{
 
-        grid-template-columns: 100%;
+        grid-template-columns: 80%;
+        margin: auto;
         grid-template-areas:  
         "b"
         "a";
@@ -136,7 +244,7 @@ span{
     }
     .home .detel{
 
-        width: 80%;
+       
         margin: auto;
 
     }
@@ -153,6 +261,25 @@ span{
         font-weight: bold;
         font-size: x-small;
     }
+
+
+    .container{
+
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+         gap: 30px;
+        margin: auto;
+       
+
+    }
+
+    .tool{
+
+        font-size :35px;
+
+    }
+
 
     
 }
@@ -215,5 +342,24 @@ span{
         font-size: 30px;
        
     }
+
+    .container{
+
+        width: 60%;
+        grid-template-columns: repeat(1,1fr);
+    
+
+    }
+
+    .tool{
+
+        font-size :25px;
+
+    }
+    #skill{
+
+        margin-top: 50px;
+    }
+
 
 }
