@@ -38,7 +38,7 @@ body{
 
 header{
   /* background-color: black; */
-  background-color: brown;
+  background-color: orange;
   position: sticky;
   top: 0;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
@@ -117,6 +117,7 @@ a{
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #45abab;
+  /* colour */
 }
 
 .education>h1{
@@ -178,7 +179,7 @@ footer{
       gap: 0;
       top: 70px;
       flex-direction:column;
-      background-color: black;
+      background-color: orange;
       opacity: 0.9;
       width: 100%;
       text-align: center;
@@ -235,7 +236,7 @@ footer{
 
 .bg-container {
   margin-top: -100px;
-  background-image: url("https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://previews.123rf.com/images/zinetron/zinetron2004/zinetron200400042/143977517-programming-and-software-development-web-page-banner-program-code-on-screen-device-software-developm.jpg");
   height: 100vh;
   background-size: cover;
   width: 100%;
@@ -257,11 +258,11 @@ footer{
   font-size: 60px;
 }
 .in-span {
-  color: maroon;
+  color: orange;
 }
 .button-resume {
   color: #ffffff;
-  background-color: maroon;
+  background-color: orange;
   border-radius: 5px;
   font-family: "Roboto";
   width: 120px;
@@ -273,7 +274,7 @@ footer{
   color: #ffffff;
   text-decoration: none;
 }.button-resume a:hover {
-  color:#00A0C6; 
+  color:black; 
   text-decoration:none; 
   cursor:pointer;  
 }
@@ -445,7 +446,7 @@ footer{
   content: '';
   width: 0; 
   height: 3px;
-  background: #ff004f; 
+  background: orange; 
   left: 0;
   position: absolute;
   bottom: -8px;
@@ -468,11 +469,16 @@ footer{
 }
 .tab-contents ul li span {
 
- color: #ad5973;
+ color: orange;
 
 
 }.tab-contents{
  display: none;
+ color: white;
+ font-weight: bold;
+ /* Education skills white... */
+
+
 }.tab-contents.active-tab{
 
  display: block;
@@ -523,7 +529,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .social-icons > div:hover {
 
-  background-color: #45abab;
+  background-color: orange;
 
 }
 
@@ -601,7 +607,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 .rows .col1:hover{
 
-  background-color: rgb(56, 103, 68); 
+  background-color:  #45abab;
   color: black;
 
 
@@ -821,10 +827,10 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
   }
-  #skill{
+  /* #skill{
 
       margin-top: 50px;
-  }
+  } */
 
   #about .row{
 
