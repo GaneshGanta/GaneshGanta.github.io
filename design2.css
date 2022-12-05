@@ -224,7 +224,7 @@
   .bg-container {
     margin-top: -100px;
     background-image: url("https://previews.123rf.com/images/zinetron/zinetron2004/zinetron200400042/143977517-programming-and-software-development-web-page-banner-program-code-on-screen-device-software-developm.jpg");
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     width: 100%;
   }
@@ -238,12 +238,17 @@
   .para1 {
     color: #ffffff;
     font-size: 50px;
+   
   }
   .para2 {
     color: #ffffff;
     font-weight: bold;
     font-size: 60px;
+   
   }
+
+  
+
   .in-span {
     color: orange;
   }
