@@ -227,6 +227,7 @@
     height: 100vh;
     background-size: cover;
     width: 100%;
+    
   }
   /* .sub-name {
     color: darkred;
@@ -545,18 +546,22 @@
     box-sizing: border-box;
     padding: 25px;
     text-align: center;
+
     
   
   }
   .stat .one .circle1{
   
-    border: 2.5px solid  orange;
+    border: 5px solid  orange;
     /* height: 90px; */
     border-radius: 16%;
     padding: 70px 5px;
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    background-color: bisque;
+    color: black;
+
   
   
   }
