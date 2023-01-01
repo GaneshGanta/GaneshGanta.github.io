@@ -224,7 +224,7 @@
   .bg-container {
     margin-top: -100px;
     background-image: url("https://previews.123rf.com/images/zinetron/zinetron2004/zinetron200400042/143977517-programming-and-software-development-web-page-banner-program-code-on-screen-device-software-developm.jpg");
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     width: 100%;
   }
@@ -234,6 +234,10 @@
   .details-section {
     margin-top: 85px;
     padding: 90px;
+  }
+
+  #ganesh{
+    margin-top: 10%;
   }
   .para1 {
     color: #ffffff;
@@ -709,6 +713,10 @@
       width: 30%;
 
     }
+    /* #para0{
+
+      font-size: 30px;
+    } */
 
   }
   

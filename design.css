@@ -13,17 +13,17 @@
   }
   .bg-container {
     background-image: url("https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
     width: 100%;
   }
   .sub-name {
     color: darkred;
   }
-  .details-section {
+  /* .details-section {
     margin-top: 85px;
     padding: 90px;
-  }
+  } */
   .para1 {
     color: #ffffff;
     font-size: 50px;
@@ -707,9 +707,6 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
 
    
-                        
-
-
 }
 
 
